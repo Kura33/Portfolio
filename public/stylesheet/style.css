@@ -1,0 +1,105 @@
+@import url(http://fr.allfont.net/allfont.css?fonts=franklin-gothic-demi);
+
+html, body {
+    /* malheureusement, par défaut, il faut reset les valeurs padding et margin des
+    balises html et body qui ont des valeurs par défaut */
+    padding: 0;
+    margin: 0;
+    font-family: 'Franklin Gothic Demi', arial;
+}
+
+/* le :hover permet de décrire l'état "la souris est sur le lien" de la balise a */
+a:hover {
+    color: grey;
+}
+
+/* le :visited permet de décrire l'état "le lien a déjà été cliqué" de la balise a */
+a:visited {
+    color: bisque;
+}
+
+h1 {
+    color: black;
+    font-size: 4.5em;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+.logoApple{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+
+}
+
+.menu1 {
+    display: grid;
+    /* permet de décrire le nombre de colonnes de la grille, c'est à dire ici
+    chaque colonne fait 1unité et il y a 3 colonnes */
+    grid-template-columns: repeat(3, 1fr);
+    /* cette propriété css permet d'aligner verticalement le contenu dans la cellule
+    uniquement si display: grid; est présent, l'unité ou la largeur de la cellule sera déduite
+    via la largeur totale de l'élément divisé par le nombre de colonnes */
+    align-items: center;
+    /* grid-gap permet de définir l'espace entre les cellules */
+    grid-gap: 10px;
+    width: 100%;
+    height: 90px;
+    background-color : rgb(167, 25, 17);
+    border-top: solid black 1px;
+    padding: 5px;
+    padding-left: 5px;
+    padding-top: 0;
+    color: white;
+    opacity: .8;
+    filter: alpha(opacity=80);
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    box-shadow: 1px 10px 12px #000000;
+    filter:progid:DXImageTransform.Microsoft.Shadow(color='#000000', Direction=200, Strength=12);
+}
+.menu1 a {
+    /* permet d'aligner horizontalement le contenu dans la cellule mais pour du texte */
+    text-align: center;
+    font-size: 8vh;
+    color: #FFFFFF;
+}
+
+.main {
+    display: grid;
+    padding: 2vh;
+    /* permet de décrire le nombre de colonnes de la grille, cad ici
+    4 colonnes d'1 unité */
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.entete {
+    /* permet de définir l'emplacement de l'élément dans son élément parent de type
+    grille, ici l'emplacement commence à partir de la colonne 2 jusqu'à la dernière colonne */
+    grid-column: 2/-1;
+    text-align: right;
+}
+
+.content {
+    grid-column: 2 / -2;
+    font-size: 2em;
+    margin-top: 11vh;
+}
+
+.over {
+    display: grid;
+    /* permet de décrire le nombre de colonnes et de lignes de la grille,
+    ici 1 colonne et 1 ligne d'une unité de 1 */
+    grid-template: repeat(1, 1fr);
+}
+
+/* ce sélecteur permet de sélectionner tous les éléments directement enfants de tous
+les éléments ayant la classe over en attribut */
+.over > * {
+    /* pour superposer les enfants, tous les enfants sont placés sur la première
+    colonne et sur la première ligne */
+    grid-row: 1;
+    grid-column: 1;
+}
+

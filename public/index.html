@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="stylesheet/style.css" />
+        <link href="http://fr.allfont.net/allfont.css?fonts=franklin-gothic-demi" rel="stylesheet" type="text/css" />
+        <title>Portfolio de Sébastien XAVIER CARLOS</title>
+    </head>
+
+    <body>
+        <!-- la balise div est la balise par défaut pour récupèrer un container 
+            avec un style css display:block; -->
+        <div class="menu1">
+            <!-- la balise a permet de créer un lien vers une autre page-->
+            <a href="index.html">A propos</a>
+            <!-- target="_blank" permet d'ouvrir un nouvel onglet quand on clique sur le lien-->
+            <a href="./cv_sebastien_xavier_carlos.pdf" target="_blank">CV</a>
+            <a href="realisations.html">Réalisations</a>
+        </div>
+
+        <div class="main">
+            <!-- la balise img permet d'insérer une image dont le chemin est indiqué
+                par l'attribut src, l'attribut alt permet d'ajouter une description
+                pour les malvoyants par ex, la balise img a par défaut un style css display:block; -->
+            <img src="images/apple-png-logo-19.png" alt="logo apple" width="170vh" height="170vh"/>
+            <div class="entete">
+                <!-- h1 est une balise titre de niveau 1, le plus haut niveau -->
+                <h1>Sébastien XAVIER CARLOS</h1>
+                <div class="over">
+                    <!-- la balise svg est une balise permettant de dessiner en vectoriel,
+                        la viewbox permet de définir la partie visible des éléments qui sont à l'intérieur
+                        dans ce cas, la viewbox commence à x=0, y=0 et a une largeur de 200 pour une hauteur de 20
+                    -->
+                    <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Simple rect element, on peut rajouter un attribut style sur les éléments
+                        à l'intérieur d'une balise svg pour appliquer un style css "inliné"
+                        dans ce cas, on applique une couleur spécifique via la fonction rgb -->
+                        <rect x="0" y="0" width="200" height="20" style="fill:rgb(186,77,69);"/>
+                        <!-- Simple circle element, on ajoute un cercle blanc au-dessus du rectangle
+                            pour créer une forme complexe, la couleur n'est pas spécifique, on peut 
+                            utiliser l'attribut fill pour ajouter de la couleur (du blanc dans ce cas)
+                            à la forme -->
+                        <circle cx="-1" cy="29" r="20" fill="white"/>
+                    </svg>
+                    <!-- h2 est une balise titre de niveau 2, on peut aller jusqu'à 5,
+                        la plupart du temps, on n'en utilise que 3-->
+                    <h2>Développeur iOS Junior</h2>
+                </div>
+            </div>
+            <div class="content">
+                <p>A propos
+                    Suite à un désir de reconversion professionnelle, j'ai choisi de devenir developpeur iOS.
+                </p>
+            </div>
+        </div>
+    </body>
+
+</html>
