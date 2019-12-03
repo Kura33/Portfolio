@@ -1,4 +1,12 @@
-@import url(http://fr.allfont.net/allfont.css?fonts=franklin-gothic-demi);
+
+@font-face {
+  font-family: 'Franklin Gothic Demi';
+  src: url('Franklin Gothic Demi Regular.ttf');
+}
+@font-face {
+  font-family: 'Rockwell';
+  src: url('rockwell.ttf');
+}
 
 html, body {
     /* malheureusement, par défaut, il faut reset les valeurs padding et margin des
@@ -33,11 +41,29 @@ h3{
   text-align:center;
   margin-bottom: 2vh;
 }
-.logoApple{
-    width: 30px;
-    height: 30px;
-    object-fit: cover;
-
+.hover {
+  position: relative;
+  height: fit-content;
+  width: fit-content;
+}
+.hover .indice{
+  top: 50px;
+  height: 100%;
+  width: 100%;
+ 
+  object-fit: cover;
+  position : absolute;
+  opacity: 0;
+  transition: .5s ease;
+}
+.logo {
+  transition: .5s ease;
+}
+.hover:hover .indice {
+  opacity:1
+}
+.hover:hover .logo {
+  opacity: 0;
 }
 
 .menu1 {
@@ -94,6 +120,7 @@ h3{
 }
 
 .content {
+  font-family: 'Rockwell';
     grid-column: 2 / -2;
     font-size: 2em;
     margin-top: 11vh;
@@ -119,8 +146,8 @@ h3{
 }
 .linksOut img{
   margin-top: 4vh;
-
 }
+
 .over {
     display: grid;
     /* permet de décrire le nombre de colonnes et de lignes de la grille,
