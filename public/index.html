@@ -4,7 +4,12 @@
 
     <head>
         <meta charset="UTF-8" />
+        
         <link rel="stylesheet" href="stylesheet/style.css" />
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="stylesheet/bootstrap.min.js"></script>
+        <script src="secret.js"></script>
         <link href="http://fr.allfont.net/allfont.css?fonts=franklin-gothic-demi" rel="stylesheet" type="text/css" />
         <title>Portfolio de Sébastien XAVIER CARLOS</title>
     </head>
@@ -52,8 +57,8 @@
             </div>
 
             <div class="linksOut">
-                <a href="https://www.linkedin.com/in/s%C3%A9bastien-xavier-carlos-542428194/" target="_blank"><img src="images/linkedin.ico"></a>
-                <a href="https://github.com/Kura33" target="_blank"><img src="images/GitHub.png"></a>
+                <a href="https://www.linkedin.com/in/s%C3%A9bastien-xavier-carlos-542428194/" target="_blank"><img class="card-link" src="images/linkedin.ico"></a>
+                <a href="https://github.com/Kura33" target="_blank"><img class="card-link" src="images/GitHub.png"></a>
                 </div>
             <div class="content">
                 <div class="aPropos">
@@ -69,6 +74,21 @@
             
             </div>
         </div>
+        <div id="secret" class="modal">
+            <video src="images/secret.mp4" controls loop></video>
+        </div>
+        <script>
+            $('#secret').modal({show: false});
+            var easter_egg = new Konami(function() { 
+                $('#secret').modal('show');
+            });
+            $('#secret').on('shown.bs.modal', function () {
+                 $('#secret video')[0].play();
+            })
+            $('#secret').on('hidden.bs.modal', function () {
+                $('#secret video')[0].pause();
+            })
+            </script>
     </body>
 
 </html>
