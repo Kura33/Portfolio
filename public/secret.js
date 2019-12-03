@@ -67,8 +67,8 @@ var Konami = function (callback) {
             tap: false,
             capture: false,
             orig_keys: "",
-            //keys: ["UP", "UP", "DOWN", "DOWN", "LEFT", "RIGHT", "LEFT", "RIGHT", "TAP", "TAP"],
-            keys: ["UP", "UP", "DOWN", "DOWN", "TAP", "TAP", "TAP"],
+            keys: ["UP", "UP", "DOWN", "DOWN", "LEFT", "RIGHT", "LEFT", "RIGHT", "TAP", "TAP"],
+           // keys: ["UP", "UP", "DOWN", "DOWN", "TAP", "TAP", "TAP"],
             input: [],
             code: function (link) {
                 konami.code(link);
