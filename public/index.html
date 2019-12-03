@@ -2,102 +2,117 @@
 <html>
 
 
-    <head>
-        <meta charset="UTF-8" />
-        
-        <link rel="stylesheet" href="stylesheet/style.css" />
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="stylesheet/bootstrap.min.js"></script>
-        <script src="secret.js"></script>
-        <title>Portfolio de Sébastien XAVIER CARLOS</title>
-    </head>
+<head>
+    <meta charset="UTF-8" />
 
-    <body>
-        <!-- la balise div est la balise par défaut pour récupèrer un container 
+    <link rel="stylesheet" href="stylesheet/style.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="stylesheet/bootstrap.min.js"></script>
+    <script src="secret.js"></script>
+    <title>Portfolio de Sébastien XAVIER CARLOS</title>
+</head>
+
+<body>
+    <!-- la balise div est la balise par défaut pour récupèrer un container 
             avec un style css display:block; -->
-        <div class="menu1">
-            <!-- la balise a permet de créer un lien vers une autre page-->
-            <a href="index.html">A propos</a>
-            <!-- target="_blank" permet d'ouvrir un nouvel onglet quand on clique sur le lien-->
-            <a href="./cv_sebastien_xavier_carlos.pdf" target="_blank">CV</a>
-            <a href="realisations.html">Réalisations</a>
-        </div>
+    <div class="menu1">
+        <!-- la balise a permet de créer un lien vers une autre page-->
+        <a href="index.html">A propos</a>
+        <!-- target="_blank" permet d'ouvrir un nouvel onglet quand on clique sur le lien-->
+        <a href="./cv_sebastien_xavier_carlos.pdf" target="_blank">CV</a>
+        <a href="realisations.html">Réalisations</a>
+    </div>
 
-        <div class="main">
-            <!-- la balise img permet d'insérer une image dont le chemin est indiqué
+    <div class="main">
+        <!-- la balise img permet d'insérer une image dont le chemin est indiqué
                 par l'attribut src, l'attribut alt permet d'ajouter une description
                 pour les malvoyants par ex, la balise img a par défaut un style css display:block; -->
-            <div class="hover">
-                <img src="images/apple-png-logo-19.png" class="logo" alt="logo apple" width="170vh"
-            height="170vh"/>
-            
-                <div class="indice">
-                     <img src="images/logo.png" alt="logo indice" width="200px" height="100px">
-                        
-                </div>
+        <div class="hover">
+            <img src="images/apple-png-logo-19.png" class="logo" alt="logo apple" width="170vh" height="170vh" />
+
+            <div class="indice">
+                <img src="images/logo.png" alt="logo indice" width="200px" height="100px">
+
             </div>
-            <div class="entete">
-                <!-- h1 est une balise titre de niveau 1, le plus haut niveau -->
-                <h1>Sébastien XAVIER CARLOS</h1>
-                <div class="over">
-                    <!-- la balise svg est une balise permettant de dessiner en vectoriel,
+        </div>
+        <div class="entete">
+            <!-- h1 est une balise titre de niveau 1, le plus haut niveau -->
+            <h1>Sébastien XAVIER CARLOS</h1>
+            <div class="over">
+                <!-- la balise svg est une balise permettant de dessiner en vectoriel,
                         la viewbox permet de définir la partie visible des éléments qui sont à l'intérieur
                         dans ce cas, la viewbox commence à x=0, y=0 et a une largeur de 200 pour une hauteur de 20
                     -->
-                    <svg style="height:133px; width:100%;" xmlns="http://www.w3.org/2000/svg">
-                        <!-- Simple rect element, on peut rajouter un attribut style sur les éléments
+                <svg style="height:133px; width:100%;" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Simple rect element, on peut rajouter un attribut style sur les éléments
                         à l'intérieur d'une balise svg pour appliquer un style css "inliné"
                         dans ce cas, on applique une couleur spécifique via la fonction rgb -->
-                        <rect x="0" y="0" width="100%" height="133px" style="fill:rgb(206, 62, 57);"/>
-                        <!-- Simple circle element, on ajoute un cercle blanc au-dessus du rectangle
+                    <rect x="0" y="0" width="100%" height="133px" style="fill:rgb(206, 62, 57);" />
+                    <!-- Simple circle element, on ajoute un cercle blanc au-dessus du rectangle
                             pour créer une forme complexe, la couleur n'est pas spécifique, on peut 
                             utiliser l'attribut fill pour ajouter de la couleur (du blanc dans ce cas)
                             à la forme -->
-                        <circle cx="-5" cy="180" r="134" fill="white"/>
-                    </svg>
-                    <!-- h2 est une balise titre de niveau 2, on peut aller jusqu'à 5,
+                    <circle cx="-5" cy="180" r="134" fill="white" />
+                </svg>
+                <!-- h2 est une balise titre de niveau 2, on peut aller jusqu'à 5,
                         la plupart du temps, on n'en utilise que 3-->
-                    <h2>Développeur iOS Junior</h2>
-                </div>
+                <h2>Développeur iOS Junior</h2>
             </div>
+        </div>
 
-            <div class="linksOut">
-                <a href="https://www.linkedin.com/in/s%C3%A9bastien-xavier-carlos-542428194/" target="_blank"><img class="card-link" src="images/linkedin.ico"></a>
-                <a href="https://github.com/Kura33" target="_blank"><img class="card-link" src="images/GitHub.png"></a>
-                </div>
-                
+        <div class="linksOut">
+            <a href="https://www.linkedin.com/in/s%C3%A9bastien-xavier-carlos-542428194/" target="_blank"><img
+                    class="card-link" src="images/linkedin.ico"></a>
+            <a href="https://github.com/Kura33" target="_blank"><img class="card-link" src="images/GitHub.png"></a>
+        </div>
 
-                </div>
-            <div class="content">
-                <div class="aPropos">
+
+        <div class="content">
+            <div class="aPropos">
                 <p>A propos:</p>
-                <p>Suite à une forte expérience dans le domaine du transport routier en tant que responsable où j’ai acquis de solides compétences d’organisation, d’autonomie et de réactivité, j’ai décidé d’entamer une nouvelle carrière professionnelle en informatique.</p>
-                <p>Désireux de me lancer un nouveau défi et passionné depuis mon adolescence, l’informatique fût une évidence dans mon choix de réorientation.</p>
-                <p>Appréciant grandement l’univers Apple et son système d’exploitation mobile, j’ai décidé de me former afin de devenir développeur d’application iOS.</p>
-                <p>Pour se faire, j’ai rejoint la formation de Développeur Informatique au sein du CESI de Bordeaux où je suis actuellement en formation initial afin de monter rapidement en compétence.</p>
-                <p>Mon adaptabilité et ma pugnacité me permet d’apprendre rapidement, mon sens des relations humaines me permet de m’intégrer aisément au sein d’une équipe de travail afin de donner le meilleur de soi.</p>
-                <p>Je recherche actuellement un poste de développeur d’application iOS en alternance dans une entreprise qui pourra m’accompagner dans cet passionnante aventure.</p>
+                <p>Suite à une forte expérience dans le domaine du transport routier en tant que responsable où j’ai
+                    acquis
+                    de solides compétences d’organisation, d’autonomie et de réactivité, j’ai décidé d’entamer une
+                    nouvelle
+                    carrière professionnelle en informatique.</p>
+                <p>Désireux de me lancer un nouveau défi et passionné depuis mon adolescence, l’informatique fût une
+                    évidence dans mon choix de réorientation.</p>
+                <p>Appréciant grandement l’univers Apple et son système d’exploitation mobile, j’ai décidé de me former
+                    afin
+                    de devenir développeur d’application iOS.</p>
+                <p>Pour se faire, j’ai rejoint la formation de Développeur Informatique au sein du CESI de Bordeaux où
+                    je
+                    suis actuellement en formation initial afin de monter rapidement en compétence.</p>
+                <p>Mon adaptabilité et ma pugnacité me permet d’apprendre rapidement, mon sens des relations humaines me
+                    permet de m’intégrer aisément au sein d’une équipe de travail afin de donner le meilleur de soi.</p>
+                <p>Je recherche actuellement un poste de développeur d’application iOS en alternance dans une entreprise
+                    qui
+                    pourra m’accompagner dans cet passionnante aventure.</p>
                 <p>N’hésitez pas à me contacter afin de pouvoir échanger sur le sujet.</p>
-                </div>
-            
             </div>
+
         </div>
-        <div id="secret" class="modal">
-            <video src="images/secret.mp4" controls loop></video>
-        </div>
-        <script>
-            $('#secret').modal({show: false});
-            var easter_egg = new Konami(function() { 
-                $('#secret').modal('show');
-            });
-            $('#secret').on('shown.bs.modal', function () {
-                 $('#secret video')[0].play();
-            })
-            $('#secret').on('hidden.bs.modal', function () {
-                $('#secret video')[0].pause();
-            })
-            </script>
-    </body>
+    </div>
+    <div id="secret" class="modal">
+        <video src="images/secret.mp4" controls loop></video>
+    </div>
+    <script>
+        $('#secret').modal({ show: false });
+        var easter_egg = new Konami(function () {
+            $('#secret').modal('show');
+        });
+        $('#secret').on('shown.bs.modal', function () {
+            $('#secret video')[0].play();
+        })
+        $('#secret').on('hidden.bs.modal', function () {
+            $('#secret video')[0].pause();
+        })
+    </script>
+</body>
 
 </html>
