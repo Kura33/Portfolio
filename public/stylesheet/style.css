@@ -134,6 +134,7 @@ h3{
 
 }
 .contentReal {
+  font-family: 'Rockwell';
   grid-column: 2 / -2;
   font-size: 2em;
   margin-top: 5vh;
@@ -142,6 +143,12 @@ h3{
 }
 .realisationVideo {
   text-align: center;
+}
+.realisationVideo i{
+  font-size: 0.8em;
+}
+.realisationVideo button{
+  margin-bottom: 4vh;
 }
 .linksOut {
     grid-column: 1/1;
@@ -198,7 +205,7 @@ les éléments ayant la classe over en attribut */
 }
 .contentReal img{
   max-width: 500px;
-  min-width: 500px;
+  max-height: 500px;
 }
 
 .realisationVideo button {
@@ -209,10 +216,10 @@ les éléments ayant la classe over en attribut */
 
 .realisationVideo video {
   max-width: 700px;
-  min-width: 700px;
+  max-height: 700px;
   position: fixed;
-    top: 30vh;
-    left: 30vw;
+    top: 10vh;
+    left: 40vw;
 }
 /* MODAL IMPORT BOOTSTRAP.CSS*/
 
@@ -444,3 +451,61 @@ les éléments ayant la classe over en attribut */
       max-width: 1140px;
     }
   }
+
+  @media all and (max-width: 1180px) and (min-width: 981px)
+{
+  .realisationVideo video {
+    max-width: 500px;
+    max-height: 500px;
+    position: fixed;
+      top: 10vh;
+      left: 40vw;
+  }
+  .contentReal img{
+    max-width: 300px;
+    max-height: 300px;
+  }
+}
+
+@media all and (max-width: 980px)
+{
+  .contentReal {
+    grid-column: 2 / -1;
+    font-size: 0.8em;
+    margin-top: 0vh;
+    margin-left: 0vw;
+    margin-right: 0vw;
+ 
+  }
+  .realisationVideo video {
+    max-width: 500px;
+    max-height: 500px;
+    position: fixed;
+      top: 10vh;
+      left: 40vw;
+  }
+  .contentReal img{
+    max-width: 300px;
+    max-height: 300px;
+  }
+  .card-link{
+    max-width: 100px;
+  }
+  .linksOut{
+    margin-left: 3vh;
+    margin-top: -5vh;
+  }
+  h1 {
+    font-size: 3em;
+  }
+  h2 {
+    font-size: 2em;
+  }
+  .content {
+    grid-column: 2 / -1;
+    font-size: 0.8em;
+    margin-top: 0vh;
+    margin-left: 0vw;
+    margin-right: 0vw;
+  }
+}
