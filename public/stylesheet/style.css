@@ -508,4 +508,10 @@ les éléments ayant la classe over en attribut */
     margin-left: 0vw;
     margin-right: 0vw;
   }
+  .hover {
+    margin: 0;
+  }
+  .hover .indice {
+    top: 30px;
+  }
 }
