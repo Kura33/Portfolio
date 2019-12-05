@@ -479,7 +479,7 @@ les éléments ayant la classe over en attribut */
 {
   .contentReal {
     grid-column: 2 / -1;
-    font-size: 1em;
+    font-size: 1.5em;
     margin-top: 0vh;
     margin-left: 0vw;
     margin-right: 0vw;
