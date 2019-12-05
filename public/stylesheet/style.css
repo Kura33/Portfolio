@@ -60,7 +60,13 @@ h3{
   transition: .5s ease;
 }
 .logo {
+  width:170px;
+  height:170px;
   transition: .5s ease;
+}
+.indice img{
+  width:200px;
+  height:100px;
 }
 .hover:hover .indice {
   opacity:1;
@@ -221,10 +227,18 @@ les éléments ayant la classe over en attribut */
 .realisationVideo video {
   max-width: 700px;
   max-height: 700px;
-  position: fixed;
-    top: 10vh;
-    left: 40vw;
 }
+
+.video{
+  position: relative;
+  top:50%;
+  transform: translateY(-50%);
+}
+
+#secret {
+  text-align: center;
+}
+
 /* MODAL IMPORT BOOTSTRAP.CSS*/
 
 .modal-open {
@@ -238,8 +252,8 @@ les éléments ayant la classe over en attribut */
   
   .modal {
     position: fixed;
-    top: 30vh;
-    left: 30vw;
+    top:0px;
+    left: 0px;
     z-index: 1050;
     display: none;
     width: 100%;
@@ -465,9 +479,6 @@ les éléments ayant la classe over en attribut */
   .realisationVideo video {
     max-width: 500px;
     max-height: 500px;
-    position: fixed;
-      top: 10vh;
-      left: 40vw;
   }
   .contentReal img{
     max-width: 300px;
@@ -491,9 +502,6 @@ les éléments ayant la classe over en attribut */
   .realisationVideo video {
     max-width: 500px;
     max-height: 500px;
-    position: fixed;
-      top: 10vh;
-      left: 40vw;
   }
   .contentReal img{
     max-width: 300px;
