@@ -490,7 +490,7 @@ les éléments ayant la classe over en attribut */
 {
   .contentReal {
     grid-column: 2 / -1;
-    font-size: 1.5em;
+    font-size: 2em;
     margin-top: 0vh;
     margin-left: 0vw;
     margin-right: 0vw;
@@ -518,11 +518,11 @@ les éléments ayant la classe over en attribut */
     font-size: 3em;
   }
   h2 {
-    font-size: 2em;
+    font-size: 2.4em;
   }
   .content {
     grid-column: 2 / -1;
-    font-size: 1.5em;
+    font-size: 2em;
     margin-top: 0vh;
     margin-left: 0vw;
     margin-right: 0vw;
