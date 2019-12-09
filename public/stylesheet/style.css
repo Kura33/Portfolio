@@ -4,18 +4,31 @@
   src: url('Franklin Gothic Demi Regular.ttf');
 }
 @font-face {
-  font-family: 'Rockwell';
+  font-family: 'Libre Baskerville';
   src: url('rockwell.ttf');
+}
+@font-face {
+  font-family: 'Rockwell';
+  src: url('LibreBaskerville.ttf');
+}
+@font-face{
+  font-family: 'PatuaOne-Regular';
+  src:url('PatuaOne-Regular.ttf') format('truetype');
 }
 
 html, body {
     /* malheureusement, par défaut, il faut reset les valeurs padding et margin des
     balises html et body qui ont des valeurs par défaut */
+    border:0;
     padding: 0;
     margin: 0;
+    background-color: cadetblue;
     font-family: 'Franklin Gothic Demi', arial;
 }
-
+section.central {
+  width: 70vw;
+  margin: auto;
+}
 /* le :hover permet de décrire l'état "la souris est sur le lien" de la balise a */
 a:hover {
     color: grey;
@@ -28,26 +41,34 @@ a:visited {
 
 h1 {
     color: black;
-    font-size: 4.5em;
+    font-size: 3.5em;
     margin-right:2vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    font-family: 'PatuaOne-Regular';
 }
 
 h2 {
     font-size: 3em;
     margin-right:2vh;
+    margin-top: 1vh;
+    font-family: 'PatuaOne-Regular';
+    text-decoration: underline rgb(149, 115, 177); 
 }
 h3{
   font-size: 2em;
   text-align:center;
   margin-bottom: 2vh;
   margin-top: 0;
+  font-family: 'PatuaOne-Regular';
 }
 .hover {
   position: relative;
   height: fit-content;
   width: fit-content;
   margin-top: 3vh;
-  margin-left: 4vw;
+  margin-left: 2vw;
+  transform: translateX(-2%);
 }
 .hover .indice{
   top: 50px;
@@ -89,7 +110,7 @@ h3{
     grid-gap: 10px;
     width: 100%;
     height: 90px;
-    background-color : rgb(206, 62, 57);
+    background-color : rgb(143, 187, 189);
     border-top: solid black 1px;
     padding: 5px;
     padding-left: 5px;
@@ -98,17 +119,22 @@ h3{
     opacity: 1;
     filter: alpha(opacity=80);
     -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
-    box-shadow: 1px 10px 12px #000000;
+    box-shadow: 1px 3px 80px #1d1d1d;
     filter:progid:DXImageTransform.Microsoft.Shadow(color='#000000', Direction=200, Strength=12);
     position:fixed;
     top:0;
+    left: 0;
 }
 .menu1 a {
     /* permet d'aligner horizontalement le contenu dans la cellule mais pour du texte */
     text-align: center;
     font-size: 2em;
-    color: #FFFFFF;
+    color: black;
     margin:0 4vw;
+    text-decoration: underline rgb(149, 115, 177);
+}
+.menu1 a:hover {
+  color: darkgoldenrod;
 }
 
 .main {
@@ -117,7 +143,10 @@ h3{
     /* permet de décrire le nombre de colonnes de la grille, cad ici
     4 colonnes d'1 unité */
     grid-template-columns: repeat(4, 1fr);
-    margin-top:90px;
+    margin-top:130px;
+    margin-bottom:30px;
+    background-color: bisque;
+    border: 0.2rem solid rgb(53, 79, 80);
 
     
 }
@@ -127,28 +156,31 @@ h3{
     grille, ici l'emplacement commence à partir de la colonne 2 jusqu'à la dernière colonne */
     grid-column: 2/-1;
     text-align: right;
+    
 }
 
 .content {
-  font-family: 'Rockwell';
+  font-family: 'Libre Baskerville';
     grid-column: 2 / -2;
-    font-size: 2em;
+    font-size: 1.5em;
     margin-top: 5vh;
-    margin-left: 5vw;
-    margin-right: -15vw;
+    margin-left: -5vw;
+    margin-right: -13vw;
     text-align:justify;
 
 }
 .contentReal {
-  font-family: 'Rockwell';
+  font-family: 'Libre Baskerville';
   grid-column: 2 / -2;
-  font-size: 2em;
+  font-size: 1.5em;
   margin-top: 5vh;
-  margin-left: 5vw;
-  margin-right: -15vw;
+  margin-left: 2vw;
+  margin-right: -13vw;
+  text-align:justify;
 }
 .realisationVideo {
   text-align: center;
+  margin-left: -7vw;
 }
 .realisationVideo i{
   font-size: 0.8em;
@@ -159,7 +191,8 @@ h3{
 .linksOut {
     grid-column: 1/1;
     margin-top: 10vh;
-    margin-left: 10vw;
+    margin-left: 2vw;
+    margin-right: 10vw;
 }
 .linksOut img{
   margin-top: 4vh;
@@ -170,10 +203,6 @@ h3{
     /* permet de décrire le nombre de colonnes et de lignes de la grille,
     ici 1 colonne et 1 ligne d'une unité de 1 */
     grid-template: repeat(1, 1fr);
-}
-.over svg{
-  height:133px; 
-  width:100%;
 }
 
 /* ce sélecteur permet de sélectionner tous les éléments directement enfants de tous
@@ -188,8 +217,8 @@ les éléments ayant la classe over en attribut */
   margin-top: 5vh;
   border-radius: 2vh;
   overflow: hidden;
-	background: #fff;
-	box-shadow: 0vh 2vh 10vh rgba(255,255,255,1);
+	background: bisque;
+	box-shadow: 0vh 2vh 10vh bisque;
 	text-align: center;
 	transition: 0.5s ease;
 }
@@ -201,16 +230,17 @@ les éléments ayant la classe over en attribut */
 .card-link{
   border-radius: 2vh;
   overflow: hidden;
-	background: #fff;
-	box-shadow: 0vh 2vh 10vh rgba(255,255,255,1);
+	background: bisque;
+
 	text-align: center;
   transition: 0.5s ease;
   max-width: 128px;
+  
 }
 
 .card-link:hover{
 	transform: scale(1.1);
-  box-shadow: 1vh 4vh 50vh rgba(0,0,0,0.9);
+  box-shadow: 1vh 2vh 30vh rgba(0,0,0,0.9);
   
 }
 .contentReal img{
@@ -488,9 +518,13 @@ les éléments ayant la classe over en attribut */
 
 @media all and (max-width: 980px)
 {
+  section.central {
+    width: 100vw;
+    margin: auto;
+  }
   .contentReal {
     grid-column: 2 / -1;
-    font-size: 2em;
+    font-size: 1em;
     margin-top: 0vh;
     margin-left: 0vw;
     margin-right: 0vw;
@@ -515,14 +549,17 @@ les éléments ayant la classe over en attribut */
     margin-top: -5vh;
   }
   h1 {
-    font-size: 3em;
+    font-size: 2.5em;
   }
   h2 {
-    font-size: 2.4em;
+    font-size: 1.8em;
+  }
+  h3 {
+    font-size: 1.8em;
   }
   .content {
     grid-column: 2 / -1;
-    font-size: 2em;
+    font-size: 1em;
     margin-top: 0vh;
     margin-left: 0vw;
     margin-right: 0vw;
@@ -532,9 +569,5 @@ les éléments ayant la classe over en attribut */
   }
   .hover .indice {
     top: 30px;
-  }
-  .over svg{
-    height:100px; 
-    
   }
 }
