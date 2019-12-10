@@ -284,11 +284,12 @@ http://www.tooplate.com/view/2088-big-city
                                                 <div class="tm-bg-white-half"></div>
                                             </div>
                                             <button id="korgathButton" class="card-image" type="button">
-                                                <img class="img" src="img/korgath.png">
+                                                <!-- <img class="img" src="img/korgath.png">  -->
+                                                <video class="video" src="video/korgath.mov" controls poster="img/korgath.png" ></video>
                                             </button>
-                                            <div id="videoKorgath" class="modal">
+                                            <!-- <div id="videoKorgath" class="modal">
                                                 <video class="video" src="video/korgath.mov" controls poster="img/korgath.png"></video>
-                                            </div>
+                                            </div> -->
                                             <!-- <div class="grid-item">
                                                 <a href="img/tm-img-01.jpg">                                                
                                                     <img src="img/tm-img-01-tn.jpg" alt="Image" class="img-fluid tm-img">                                              
@@ -340,11 +341,12 @@ http://www.tooplate.com/view/2088-big-city
                                                 <div class="tm-bg-white-half"></div>
                                             </div>
                                             <button id="tekiButton" class="card-image" type="button">
-                                                <img class="img" src="img/teki.png">
-                                            </button>
-                                            <div id="videoTeki" class="modal">
+                                                <!-- <img class="img" src="img/teki.png"> -->
                                                 <video class="video" src="video/teki.mov" controls poster="img/teki.png"></video>
-                                            </div>
+                                            </button>
+                                            <!-- <div id="videoTeki" class="modal"> 
+                                                <video class="video" src="video/teki.mov" controls poster="img/teki.png"></video>
+                                            </div>-->
                                             <!-- <div class="grid-item grid-item-big">
                                                 <a href="img/tm-img-07.jpg">                                                
                                                     <img src="img/tm-img-07-tn.jpg" alt="Image" class="img-fluid tm-img-no-border">                                              
@@ -562,7 +564,7 @@ http://www.tooplate.com/view/2088-big-city
             });
 
         </script>  
-        <script>
+        <!-- <script>
             $('#videoKorgath').modal({ show: false });
             $('#korgathButton').click(function () { $('#videoKorgath').modal('show'); });
             $('#videoKorgath').on('shown.bs.modal', function () {
@@ -583,7 +585,7 @@ http://www.tooplate.com/view/2088-big-city
                 $('#videoTeki video')[0].pause();
 
             })
-        </script>             
+        </script> -->            
 
 </body>
 </html>
