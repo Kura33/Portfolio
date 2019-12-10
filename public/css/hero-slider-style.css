@@ -742,7 +742,7 @@ videos realisations
   text-align: center;
 }
 
-.tm-img-gallery video {
+.tm-img-gallery .video-gallery {
   max-width: 700px;
   max-height: 700px;
 
@@ -753,7 +753,7 @@ videos realisations
   max-height: 500px;
   
 }
-.video{
+.video-gallery{
   position: relative;
   top:50%;
   left: 50%;
@@ -778,6 +778,7 @@ videos realisations
 #download-cv > a:hover{
   color: black;
 }
+
 /********************
 MODAL
 ********************/
