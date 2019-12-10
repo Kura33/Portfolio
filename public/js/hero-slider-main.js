@@ -121,7 +121,7 @@ jQuery(document).ready(function($){
 
 		//check if the select slide contains a video element - if yes, play the video
 		var visibleVideo = container.children('li').eq(n).find('video');
-		if( visibleVideo.length > 0 ) visibleVideo.get(0).play();
+		//if( visibleVideo.length > 0 ) visibleVideo.get(0).play();
 	}
 
 	function updateNavigationMarker(marker, n) {

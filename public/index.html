@@ -405,13 +405,13 @@ http://www.tooplate.com/view/2088-big-city
                                         <div class="tm-flex tm-contact-container tm-bg-dark-blue">                                
                                             <div class="text-xs-left tm-textbox tm-2-col-textbox-2 tm-textbox-padding tm-textbox-padding-contact">
                                                 <p class="tm-text"> !!!!!!!! PAGE CONTACT IN DEVELOPPEMENT !!!!!!!</p>                                                                                                                                                 
-                                                <p class="tm-text">4 rue des frères lumière<br>33320 EYSINES<br>France<br></p>
+                                                <p class="tm-text">33320 EYSINES<br>France<br></p>
                                                 <p class="tm-text">Tel: +33642551852<br></p>
                                             </div>
 
                                             <div class="text-xs-left tm-textbox tm-2-col-textbox-2 tm-textbox-padding tm-textbox-padding-contact">
                                                 <!-- contact form -->
-                                                <form action="index.html" method="post" class="tm-contact-form">
+                                                <form action="contact.html" method="post" class="tm-contact-form">
                                                     <div class="form-group">
                                                         <input type="text" id="contact_name" name="contact_name" class="form-control" placeholder="Name"  required/>
                                                     </div>                                                                                                            
@@ -492,7 +492,7 @@ http://www.tooplate.com/view/2088-big-city
                     // if visible - we are not on a mobile device 
                     var videoUrl = videoWrapper.data('video'),
                         
-                    video = $('<video autoplay loop><source src="'+videoUrl+'.mp4" type="video/mp4" /></video>');
+                    video = $('<video autoplay loop id="upload" muted><source src="'+videoUrl+'.mp4" type="video/mp4" /></video>');
                     video.appendTo(videoWrapper);
 
                     // play video if first slide
@@ -552,7 +552,7 @@ http://www.tooplate.com/view/2088-big-city
 
                 // Play video only when visible
                 // https://stackoverflow.com/questions/21163756/html5-and-javascript-to-play-videos-only-when-visible
-                $('video').each(function(){
+                $('#upload').each(function(){
                     if ($(this).is(":in-viewport")) {
                         $(this)[0].play();
                     } else {
