@@ -662,4 +662,7 @@ border-top-color: #f9c922; /* Chrome, Opera 15+, Safari 5+ */ animation: spin 1.
 	.tm-bg-white-half {
 		left: -5px;
 	}
+	.cd-hero-slider h2.tm-text-title {
+		font-size: 1.4em;
+	}
 }
