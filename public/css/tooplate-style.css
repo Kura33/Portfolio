@@ -659,4 +659,7 @@ border-top-color: #f9c922; /* Chrome, Opera 15+, Safari 5+ */ animation: spin 1.
 		max-width: 300px;
 		max-height: 300px;
 	}
+	.tm-bg-white-half {
+		left: -5px;
+	}
 }
