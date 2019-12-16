@@ -19,8 +19,9 @@ router.post('/contact.html', function(req, res, next) {
   let email = req.body.contact_email;
   let message = req.body.contact_message;
 
-  sendMail(name, email, message);
-  res.render('index');
+  let info = sendMail(name, email, message).catch(console.error);
+  console.log(info);
+  res.render('index', info);
 })
 
 async function sendMail(name, email, message) {
@@ -28,7 +29,7 @@ async function sendMail(name, email, message) {
     host: 'mail.gandi.net',
     port: 465,
     secure: true, // true for 465, false for other ports
-    autsh: {
+    auth: {
       user: 'contact@sebastien-xaviercarlos.com', // generated ethereal user
       pass: process.env.PASS // generated ethereal password
     }
@@ -38,10 +39,10 @@ async function sendMail(name, email, message) {
   let info = await transporter.sendMail({
     from: '" ' + name + '" <' + email + '>', // sender address
     to: "sebastien.xaviercarlos@hotmail.com", // list of receivers
-    subject: "Message envoyé via la portfolio de " + name, // Subject line
+    subject: "Message de " + name + " envoyé via la portfolio", // Subject line
     text: message // plain text body
   });
+  return info;
 }
 
-sendMail().catch(console.error);
 module.exports = router;
