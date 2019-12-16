@@ -725,7 +725,8 @@ videos realisations
 	background: none;
 	text-align: center;
   transition: 0.5s ease;
-  max-width: 100px;
+  max-width: 50px;
+  margin-right: 2vw;
   
 }
 
@@ -745,7 +746,7 @@ videos realisations
 .tm-img-gallery .video-gallery {
   max-width: 700px;
   max-height: 700px;
-
+  margin-bottom: 15vh;
 }
 
 .tm-img-gallery img{
@@ -765,19 +766,21 @@ videos realisations
 #download-cv {
   outline: none;
   border: none;
-  color: black;
+  color: white;
   width: 15vw;
   height: 10vh;
   font-size: 1.5em;
   font-style: bold;
+  background-color: #856729;
 }
 #download-cv > a{
-  color: black;
+  color: white;
 }
 
 #download-cv > a:hover{
-  color: black;
+  color: white;
 }
+
 
 /********************
 MODAL

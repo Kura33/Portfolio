@@ -477,7 +477,6 @@ border-top-color: #f9c922; /* Chrome, Opera 15+, Safari 5+ */ animation: spin 1.
 	.cd-hero-slider h2.tm-text-title-small { font-size: 1.6em; }
 	.tm-textbox-padding { padding: 30px 40px; }
 	.tm-textbox-padding-contact { padding: 30px; }
-		
 	.grid-item {
 		padding-left: 10px;
 		padding-right: 10px;
@@ -505,7 +504,9 @@ border-top-color: #f9c922; /* Chrome, Opera 15+, Safari 5+ */ animation: spin 1.
 }
 
 .tm-sm-margin-b { margin-bottom: 30px; }
-.tm-2-col-equal-height { height: 77%; }
+.tm-2-col-equal-height { height: 77%; 
+						margin-bottom:4vh;				
+}
 
 @media only screen and (min-width: 768px) {
 
@@ -658,6 +659,7 @@ border-top-color: #f9c922; /* Chrome, Opera 15+, Safari 5+ */ animation: spin 1.
 	.tm-img-gallery .video-gallery {
 		max-width: 300px;
 		max-height: 300px;
+		
 	}
 	.tm-bg-white-half {
 		left: -5px;
